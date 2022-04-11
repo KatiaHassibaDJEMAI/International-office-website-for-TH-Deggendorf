@@ -1,0 +1,22 @@
+{
+    "languageView": "Sprache",
+    "currentLanguage": "Deutsch",
+    "cStartText": "Willkommen zu DIT!",
+    "cRooms": "Räume",
+    "cRoomsText": "Aktuelle Buchung des Raums mit ",
+    "cRoomSelect": "Raum wählen",
+    "cNavigation": "Navigation",
+    "cNavigationText": "Navigation funktioniert",
+    "cInternal": "Interne",
+    "cInternalText": "Interne Informationen funktionieren",
+    "cInternational": "International",
+    "cInternationalText": "International funktioniert",
+    "cLogin": "Login",
+    "cLoginText": "Bitte geben Sie Ihre E-Mail und das Passwort ein:",
+    "cEvents": "Veranstaltungen",
+    "cEventsText": "Veranstaltungen funktioniert",
+    "cNews": "Aktuelles",
+    "cNewsText": "Aktuelles funktioniert!!",
+    "cNewsCard": "ECRI Lunch Talk - Destinationsbranding",
+    "cNewsHeader": "Aktuelle Top"
+}

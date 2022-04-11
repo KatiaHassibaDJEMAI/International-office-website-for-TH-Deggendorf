@@ -1,0 +1,38 @@
+<div class = 'row m-0 w-100'>
+
+    <div class = 'col-md-4 offset-4 mt-5' *ngIf = '!this.isLogin'>
+        <h4>Login</h4>
+        <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+
+            <div class = 'form-group'>
+                <input class = 'form-control' type = "text" name = "username" placeholder = "Username" [(ngModel)]="myform.name" required>
+            </div>
+            <br>
+            <div class = 'form-group'>
+                <input class = 'form-control' type = "text" name = "email" placeholder = "Email" [(ngModel)]="myform.email" required>
+            </div>
+            <br>
+            <div class = 'form-group'>
+                <input class = 'form-control' type = "password" name = "password" placeholder = "Password" [(ngModel)]="myform.password" required>
+            </div>
+           
+            <br>
+            <input class= 'btn btn-outline-info' type = "submit" value = "Login">
+            <br>
+            <br>
+            <div class = 'form-group'>
+                <p>Not registered yet?</p>
+                <button class = 'btn btn-outline-info' routerLink="/register" >Register</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isLogin'>
+       
+        <h1>Welcome {{this.rUsername}}! You are logged in</h1>
+        <button class = 'btn btn-outline-info' (click) = 'logout()'>Log-out</button>
+          
+    </div>
+
+</div>

@@ -1,0 +1,36 @@
+<!-- <p>{{'cEventsText'|translate}}</p> -->
+
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/events2.webp" alt="thd-events" height="300px" width="100%">
+    </div>
+</main>
+<div id="upcomingEvents" >
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        Event Calendar
+    </h1>
+    <br>
+ 
+    <mat-list-item class="event-row">
+        <tr class="event-row">
+            <td style="color: #181616;font-family: Arial, sans-serif;font-size:20px;    ">Date&emsp;</td>
+            <td style="color: #181616;font-family: Arial, sans-serif;font-size:20px;padding-right:6px;">Time&emsp;</td>
+            <td>&emsp;&emsp;&emsp;&emsp;</td>
+            <td style="color: #181616;font-family: Arial, sans-serif;font-size:20px;padding-right:6px;">
+                &emsp;&emsp;&emsp;&emsp;Event</td>
+        </tr>
+    </mat-list-item>
+ 
+    <mat-nav-list>
+        <mat-list-item *ngFor="let event of events">
+            <a matLine (click)="showDetails(event)">
+
+                <span class="eventDate">{{event.date}}&emsp;</span>
+                <span class="startTime">{{event.stime}}&ensp;-&ensp;&emsp;</span>
+                <span class="endTime">{{event.etime}}&emsp;</span>
+                <span class="eventName">{{event.name}}</span>
+
+            </a>
+        </mat-list-item>
+    </mat-nav-list>
+</div>

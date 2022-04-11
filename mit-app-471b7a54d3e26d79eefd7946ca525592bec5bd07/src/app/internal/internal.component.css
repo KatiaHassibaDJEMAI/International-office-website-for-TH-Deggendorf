@@ -1,0 +1,95 @@
+.header-img {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+
+
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 37px auto 0;
+    width: calc(280px * 4);
+    
+  }
+  
+  .card {
+    box-shadow: 0 3px 10px 0 #aaa;
+    cursor: pointer;
+    height: 280px;
+    position: relative;
+    width: 243px;
+    background: #d0d0d4;
+    margin: 1em 0;
+    padding: 20px 10px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card.visited {
+    box-shadow: 0 3px 10px 2px #444;
+  }
+  
+  @media (max-width: 1100px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+      width: calc(280px * 2);
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      display: block;
+      width: 100vw;
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+  }
+
+  
+  /* ------------------------- */
+
+  /* .fullclick li {
+    list-style: none;
+    margin: 1em 0;
+    padding: 20px 10px;
+    background: #8d8989;
+    position: relative;
+  }
+  .fullclick a.main {
+    color: #eaeff5;
+    text-align: left;
+    display: block;
+    z-index: 1;
+  }
+  .fullclick li a.main::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+ */

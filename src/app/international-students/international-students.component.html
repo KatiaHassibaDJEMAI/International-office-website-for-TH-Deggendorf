@@ -1,0 +1,68 @@
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/international.webp" alt="thd-int" height="300px" width="100%">
+    </div>
+</main>
+<br>
+<div id="internationalstudents" style="text-align:left">
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        International Degree seeking students
+    </h1>
+<div>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Course Choices for International students
+    </h2>
+    <div *ngFor="let item of coursesList_int">
+        <div *ngIf="item.course === 'International courses'">
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{item.name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          {{item.description}}
+      
+      
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>  
+<br>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        German Prep Course for Internationals
+    </h2>
+    <div *ngFor="let item of coursesList_int">
+        <div *ngIf="item.course === 'German language for Internationals'">
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{item.name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          {{item.description}}
+      
+      
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>  
+<br>
+<br>
+
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Contact
+    </h2>
+    <div class="contact">
+        <p>Julia K</p>
+        <p>Deputy Head of Division</p>
+        <p>B 210</p>
+        <p>juliak@th-deg.de</p>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": " Alumni work holds a treasure ",
+        "image": "../assets/Dachverband_Alumni.webp",
+        "description": "Only a third of all Bavarian universities have permanent staff to handle their alumni work. While some colleges and universities ..."
+    },
+    {
+        "id": "2",
+        "title": " Mini-battery for semi-conductor chips ",
+        "image": "../assets/Silizium_Mikrobatterien.webp",
+        "description": "In microelectronics, we know that the smaller, more efficient and more mobile microchips are, the more diverse their applications..."
+    },
+    {
+        "id": "3",
+        "title": "€ 3.64 million in funding for 'med4PAN' lighthouse",
+        "image": "../assets/Projekt_med4PAN.webp",
+        "description": "Together with project partners, the district of Rottal-Inn has committed itself to improving medical care in the district of Rott..."
+    },
+    {
+        "id": "4",
+        "title": " Premiere in Biberach ",
+        "image": "../assets/Biberacher_Festspiele.webp",
+        "description": "Great honour for Deggendorf filmmakers: their short film 'Flucht' (Escape) was presented at the beginning of November at the Bibe..."
+    }
+]

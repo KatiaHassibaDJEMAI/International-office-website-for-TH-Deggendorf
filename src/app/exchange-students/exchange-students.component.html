@@ -1,0 +1,66 @@
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/international.webp" alt="thd-int" height="300px" width="100%">
+    </div>
+</main>
+<br>
+<div id="exchangestudents" style="text-align:left">
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        International Exchange Students
+    </h1>
+<div>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Exchange Semester Course Choices
+    </h2>
+<div *ngFor="let item of coursesList; let i = index;">
+    <div *ngIf="item.course === 'Exchange Semester Course Choices'">
+    <button #el class="accordion" (click)="toggleHelper(i)">
+        <slot name="header">{{ item.name }}</slot>
+    </button>
+    <div class="panel">
+        <br>
+        <slot name="details">
+            {{ item.description }}
+        </slot>
+        <br>
+    </div>
+    </div>
+</div>
+</div>  
+<br>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Applying as an Exchange Student
+    </h2>
+<div *ngFor="let item of coursesList; let i = index;">
+    <div *ngIf="item.course === 'Applying as an Exchange Student'">
+    <button #el class="accordion" (click)="toggleHelper(i)">
+        <slot name="header">{{ item.name }}</slot>
+    </button>
+    <div class="panel">
+        <br>
+        <slot name="details">
+            {{ item.description }}
+        </slot>
+        <br>
+    </div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Contact
+    </h2>
+    <div class="contact">
+        <p>Julia K</p>
+        <p>Deputy Head of Division</p>
+        <p>B 210</p>
+        <p>juliak@th-deg.de</p>
+    </div>
+</div>

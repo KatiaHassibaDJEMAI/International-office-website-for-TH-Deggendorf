@@ -1,0 +1,107 @@
+.main {
+    margin: 10px;
+}
+
+.flexSpaceBetween {
+  justify-content: space-around;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logobox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
+
+
+
+.sn-content {
+  height: 100vh;
+}
+.color-toolbar {
+  background-color: rgba(47, 47, 47, 0.8);
+}
+
+
+.social-footer {
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+
+/* ------------------ */
+#lab_social_icon_footer {
+  padding: 40px 0;
+  background-color: #dedede;
+}
+
+#lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}

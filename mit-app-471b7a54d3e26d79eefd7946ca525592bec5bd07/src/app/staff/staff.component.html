@@ -1,0 +1,76 @@
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/international.webp" alt="thd-int" height="300px" width="100%">
+    </div>
+</main>
+<div>
+    <h1 class="title">Contact Members from the administration</h1>
+</div>
+<br>
+<br>
+<div>
+    <div>
+        <div >
+            <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+                Student & Academic Counsellors
+            </h2>
+            <br>
+        <div style="font-family: Arial, sans-serif;font-size:20px ;text-align:left" *ngFor="let p of prof">
+            <div *ngIf="p.section === 'Student & Academic Counsellors'">
+                <br>
+                <p>{{p.name}}</p>
+                <p>{{p.dept}}</p>
+                <p>{{p.venue}}</p>
+                <p>{{p.email}}</p>
+                <p>{{p.phone}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<div>
+    <div>
+        <div >
+            <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+                Center of applied research
+            </h2>
+            <br>
+        <div style="font-family: Arial, sans-serif;font-size:20px ;text-align:left" *ngFor="let p of prof">
+            <div *ngIf="p.section === 'Center of applied research'">
+                <br>
+                <p>{{p.name}}</p>
+                <p>{{p.dept}}</p>
+                <p>{{p.venue}}</p>
+                <p>{{p.email}}</p>
+                <p>{{p.phone}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<br>
+<div>
+    <div>
+        <div >
+            <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+                Research and Development Services
+            </h2>
+            <br>
+        <div style="font-family: Arial, sans-serif;font-size:20px ;text-align:left" *ngFor="let p of prof">
+            <div *ngIf="p.section === 'Research and Development Services'">
+                <br>
+                <p>{{p.name}}</p>
+                <p>{{p.dept}}</p>
+                <p>{{p.venue}}</p>
+                <p>{{p.email}}</p>
+                <p>{{p.phone}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>

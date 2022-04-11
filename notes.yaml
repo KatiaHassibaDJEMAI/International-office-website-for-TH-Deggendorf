@@ -1,0 +1,92 @@
+-- CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, 
+class, type, attribute etc.
+ex : h1{
+    color: black;
+    font: "Helvetica";
+}// h1 is a CSS selector
+-The <template> tag is used as a container to hold some HTML content hidden from the user when the page loads.
+
+The content inside <template> can be rendered later with a JavaScript.
+
+You can use the <template> tag if you have some HTML code you want to use over and over again, but not until you ask for it. 
+To do this without the <template> tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.
+code ex:
+ <button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="img_white_flower.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script> 
+
+--A plain typescipt class is a module in angular
+we call it a decorator function 
+code ex:
+@NgModule({
+  declarations: [
+    AppComponent,
+    StartComponent,
+    NewsComponent
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: StartComponent },
+      { path: 'navigation', component: NavigationComponent },
+      
+      { path: 'news', component: NewsComponent }
+    ]),
+    
+    I18nModule],
+  exports: [
+    RouterModule,
+  ],
+  entryComponents: [LoginComponent, RegisterDialog],
+  providers: [], // SocketioService
+  bootstrap: [AppComponent]
+})
+Your API key is: d4be71a73da740bf9e25644854d3ffc1
+
+setting up a server:
+//form serious guy video
+// app.use(cors());
+// app.use(bodyparser.json());
+// //add middle ware
+
+// app.use(requestLoggerMiddleware);
+// app.get('/todo', (req: Request, res: Response, next: NextFunction) => {
+//     res.json([{id: 1, description: 'Buy bread'}]);
+// });
+
+// app.post('/todo', (req: Request, res: Response, next: NextFunction)=>{
+//     console.info(req.body);
+//     res.end();
+// });
+
+
+// app.put('/todo:id', (req: Request, res: Response, next: NextFunction)=>{
+//     console.info(req.params.id);
+//     res.end();
+// });
+// app.delete('/todo:id', (req: Request, res: Response, next: NextFunction)=>{
+//     console.info(req.body);
+//     console.info(req.params.id);
+//     res.end();
+// });
+
+//from travers medjia vid
+// const add = (a:number, b:number):number => a + b;
+
+// app.get('/', (req:Request, res:Response, next:NextFunction) => {
+//     console.log(add(3,4))
+//     res.send('hello');
+// });
+
+// app.listen(5000, () => console.log('server running'));
