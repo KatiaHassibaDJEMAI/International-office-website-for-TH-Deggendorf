@@ -1,0 +1,28 @@
+.content {
+    padding: 30px;
+}
+
+.content > mat-card {
+    width: 500px;
+    height:300px;
+}
+mat-toolbar {
+    justify-content: space-between;
+}
+
+
+
+.column-label {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+.title{
+    padding: 50px;
+    text-align: left;
+
+}
+.color-button {
+    /* text-align: center;
+    padding: 5px; */
+    background-color: rgba(231, 231, 231, 0.585);
+  }

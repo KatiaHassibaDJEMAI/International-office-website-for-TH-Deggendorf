@@ -1,0 +1,124 @@
+[
+    {
+      "id": "S1001",
+      "section": "Student & Academic Counsellors",
+      "role":"staff",
+      "name": "Alexamdra N",
+      "dept":"Head of division",
+      "venue": "B 101",
+     "email": "aleexandra@th-deg.de",
+     "phone":"0991/3276 4878"
+    },
+    {
+        "id": "S1002",
+        "section": "Student & Academic Counsellors",
+        "role":"staff",
+        "name": "Steffi N",
+        "dept":"Staff member",
+        "venue": "B 101",
+       "email": "steffi@th-deg.de",
+       "phone":"0991/3276 4878"
+      },
+      {
+        "id": "S1001",
+        "section": "Center of applied research",
+        "role":"staff",
+        "name": "Alexamdra N",
+        "dept":"Head of division",
+        "venue": "B 101",
+       "email": "aleexandra@th-deg.de",
+       "phone":"0991/3276 4878"
+      },
+      {
+          "id": "S1002",
+          "section": "Center of applied research",
+          "role":"staff",
+          "name": "Steffi N",
+          "dept":"Director",
+          "venue": "B 101",
+         "email": "steffi@th-deg.de",
+         "phone":"0991/3276 4878"
+        },
+        {
+            "id": "S1001",
+            "section": "Research and Development Services",
+            "role":"staff",
+            "name": "Antony N",
+            "dept":"Project Coordinator",
+            "venue": "B 101",
+           "email": "antony@th-deg.de",
+           "phone":"0991/3276 4878"
+          },
+          {
+              "id": "S1002",
+              "section": "Research and Development Services",
+              "role":"staff",
+              "name": "David N",
+              "dept":"Advisor",
+              "venue": "B 101",
+             "email": "david@th-deg.de",
+             "phone":"0991/3276 4878"
+            },
+            {
+                "id": "P1001",
+                "section": "Computer science",
+                "role":"professor",
+                "name": "Peter N",
+                "dept":"professor",
+                "venue": "A 131",
+               "email": "petern@th-deg.de",
+               "phone":"0991/3276 4878"
+              },
+              {
+                "id": "P1002",
+                "section": "Computer science",
+                "role":"professor",
+                "name": "Julia N",
+                "dept":"professor",
+                "venue": "A 134",
+               "email": "julia@th-deg.de",
+               "phone":"0991/3276 4878"
+              },
+              {
+                "id": "P1003",
+                "section": "Mechanical Engineering",
+                "role":"professor",
+                "name": "Sam N",
+                "dept":"professor",
+                "venue": "A 131",
+               "email": "samn@th-deg.de",
+               "phone":"0991/3276 4878"
+              },
+              {
+                "id": "P1004",
+                "section": "Mechanical Engineering",
+                "role":"professor",
+                "name": "Wyatt N",
+                "dept":"professor",
+                "venue": "A 131",
+               "email": "Wyattnm@th-deg.de",
+               "phone":"0991/3276 4878"
+              },
+              {
+                "id": "P1005",
+                "section": "Electrical Engineering",
+                "role":"professor",
+                "name": "Patrick N",
+                "dept":"Asst. professor",
+                "venue": "E 131",
+               "email": "Patrickn@th-deg.de",
+               "phone":"0991/3276 4878"
+              },
+              {
+                "id": "P1006",
+                "section": "Electrical Engineering",
+                "role":"professor",
+                "name": "Martha N",
+                "dept":"professor",
+                "venue": "E 331",
+               "email": "Martha1@th-deg.de",
+               "phone":"0991/3276 4878"
+              }
+
+   
+  ]

@@ -1,0 +1,91 @@
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/international.webp" alt="thd-int" height="300px" width="100%">
+    </div>
+</main>
+<br>
+<div id="career" style="text-align:left">
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        Learn key skills alongside your studies
+    </h1>
+<div>
+<br>
+<div>
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        Overview of language and electives
+    </h1> 
+    <br>
+    <div>
+        <p>In almost every degree programme, one or more AWP subjects or so-called compulsory language courses must be taken by the end of the degree programme in addition to the regular lectures. You can find out when AWP subjects and compulsory languages are scheduled in your degree programme not only from our overview, but also from the study and examination regulations that apply to you.</p>
+        <p>Each AWP subject and each compulsory language course may only be chosen once. For example, if you choose the same language for the second time, it must be different in content (title) or level from the first choice. In the end, the decisive factor is not when, but that you have completed ALL required AWP subjects and compulsory languages by the end of your studies.</p>
+    </div>
+    <br>
+    <br>
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        Language and Elective exams
+    </h1> 
+    <br>
+    <div>
+        <p>Dates for exam registration are announced on the DIT website. As with other exams, registration takes place in the Primuss-Portal.</p>
+        <p>Please pay attention to the type of crediting when registering: AWP (2ECTS), compulsory language course (2/4 ECTS), voluntary subsidiary subjects (no ECTS). A subsequent change is not possible!</p>
+        <p>Admission requirements for language exams: Please note that a minimum of 75% attendance is required for admission to the sit the exams, as stated in the general exam regulations § 4 paragraph no.3.</p>
+    </div>
+</div>
+<br>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Intensive Language Courses
+    </h2>
+    <div *ngFor="let item of coursesList_int">
+        <div *ngIf="item.course === 'Intensive Language Courses'">
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{item.name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          {{item.description}}
+      
+      
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>  
+<br>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Electives
+    </h2>
+    <div *ngFor="let item of coursesList_int">
+        <div *ngIf="item.course === 'Electives'">
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{item.name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          {{item.description}}
+      
+      
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>  
+<br>
+<br>
+
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Contact
+    </h2>
+    <div class="contact">
+        <p>Julia K</p>
+        <p>Deputy Head of Division</p>
+        <p>B 210</p>
+        <p>juliak@th-deg.de</p>
+    </div>
+</div>

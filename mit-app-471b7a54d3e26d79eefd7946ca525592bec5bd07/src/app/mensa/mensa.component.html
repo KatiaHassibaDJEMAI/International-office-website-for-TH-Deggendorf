@@ -1,0 +1,101 @@
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/mensa.webp" alt="mensa" height="300px" width="100%">
+    </div>
+</main>
+<br>
+<div  class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isLogin'>
+<div>
+    <h1 class="title">Cafeteria menu</h1>
+</div>
+<br>
+<mat-tab-group>
+    <mat-tab label="Monday"> 
+    <div>
+        <br>
+        <h1>Breakfast</h1> 
+        <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 9.00 - 10.00</h2>
+        <p>Croissant - 1.20 euros</p> 
+        <p>Sandwich - 1.50 euros</p>
+        <br>
+        <h1>Lunch</h1> 
+        <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 13.00 - 14.00</h2>
+        <p>Chicken sandwich - 2.50 euros</p> 
+        <p>Salad - 2.00 euros</p>
+        <br>
+    </div>  
+    </mat-tab>
+    <mat-tab label="Tuesday"> 
+        <div>
+            <br>
+            <h1>Breakfast</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 9.00 - 10.00</h2>
+            <p>Toast - 1.20 euros</p> 
+            <p>Pretzel - 1.50 euros</p>
+            <br>
+            <h1>Lunch</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 13.00 - 14.00</h2>
+            <p>Sandwich - 2.50 euros</p> 
+            <p>Salad - 2.00 euros</p>
+            <br>
+        </div>     
+    </mat-tab>
+    <mat-tab label="Wednesday"> 
+        <div>
+            <br>
+            <h1>Breakfast</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 9.00 - 10.00</h2>
+            <p>Croissant - 1.20 euros</p> 
+            <p>Johurt - 1.50 euros</p>
+            <p>Sandwich - 2.50 euros</p>
+            <br>
+            <h1>Lunch</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 13.00 - 14.00</h2>
+            <p>Sandwich - 2.50 euros</p> 
+            <p>Potato salad - 2.00 euros</p>
+            <br>
+        </div>    
+    </mat-tab>
+    <mat-tab label="Thursday"> 
+        <div>
+            <br>
+            <h1>Breakfast</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 9.00 - 10.00</h2>
+            <p>Pretzel - 1.20 euros</p> 
+            <p>Salad - 1.50 euros</p>
+            <br>
+            <h1>Lunch</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 13.00 - 14.00</h2>
+            <p>Soup - 2.50 euros</p> 
+            <p>Salad - 2.00 euros</p>
+            <br>
+        </div>     
+    </mat-tab>
+    <mat-tab label="Friday">
+        <div>
+            <br>
+            <h1>Breakfast</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 9.00 - 10.00</h2>
+            <p>Toast - 1.20 euros</p> 
+            <p>Sandwich - 1.50 euros</p>
+            <br>
+            <h1>Lunch</h1> 
+            <h2 style="font-family: Arial, sans-serif;font-size:25px ;text-align:left">Time: 13.00 - 14.00</h2>
+            <p>Chicken sandwich - 2.50 euros</p> 
+            <p>Salad - 2.00 euros</p>
+            <p>Soup - 2.00 euros</p>
+            <br>
+        </div> 
+    </mat-tab>
+  </mat-tab-group>
+  <br>
+  <br>
+</div>
+
+<div class = 'mensa' style="color: #101011;font-family: Arial, sans-serif;font-size:30px ;text-align:center" *ngIf = '!this.isLogin'>
+    <h1>Please Login to view the internal information</h1>
+            <br>
+            <input class= 'btn btn-outline-info' type = "submit" routerLink="/login" value = "Login">
+            <br>
+
+    </div>

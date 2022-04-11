@@ -1,0 +1,76 @@
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/international.webp" alt="thd-int" height="300px" width="100%">
+    </div>
+</main>
+<div>
+    <h1 class="title">Contact Professors</h1>
+</div>
+<br>
+<br>
+<div>
+    <div>
+        <div >
+            <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+                Computer science
+            </h2>
+            <br>
+        <div style="font-family: Arial, sans-serif;font-size:20px ;text-align:left" *ngFor="let p of prof">
+            <div *ngIf="p.section === 'Computer science'">
+                <br>
+                <p>{{p.name}}</p>
+                <p>{{p.dept}}</p>
+                <p>{{p.venue}}</p>
+                <p>{{p.email}}</p>
+                <p>{{p.phone}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<div>
+    <div>
+        <div >
+            <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+                Mechanical Engineering
+            </h2>
+            <br>
+        <div style="font-family: Arial, sans-serif;font-size:20px ;text-align:left" *ngFor="let p of prof">
+            <div *ngIf="p.section === 'Mechanical Engineering'">
+                <br>
+                <p>{{p.name}}</p>
+                <p>{{p.dept}}</p>
+                <p>{{p.venue}}</p>
+                <p>{{p.email}}</p>
+                <p>{{p.phone}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<br>
+<div>
+    <div>
+        <div >
+            <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+                Electrical Engineering
+            </h2>
+            <br>
+        <div style="font-family: Arial, sans-serif;font-size:20px ;text-align:left" *ngFor="let p of prof">
+            <div *ngIf="p.section === 'Electrical Engineering'">
+                <br>
+                <p>{{p.name}}</p>
+                <p>{{p.dept}}</p>
+                <p>{{p.venue}}</p>
+                <p>{{p.email}}</p>
+                <p>{{p.phone}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>

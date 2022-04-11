@@ -1,0 +1,57 @@
+<div>
+    <div>
+        <h1 class="title">{{'cNewsTop'|translate}} </h1> 
+        <!-- /*top headline*/ -->
+    </div>
+    
+    <div class="content">
+                <div   *ngFor="let card of news | keyvalue" >
+                    <div flex="33%" fxFlex.xs="100%" *ngFor="let q of card.value | keyvalue">
+                        <mat-card class="mat-elevation-z4" >
+                            <img mat-card-image [src]="q.value.image" width="400px" height="200px" >
+                            <mat-card-header>
+                                <mat-card-title > {{q.value.title}} </mat-card-title> 
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>{{q.value.description}}</p>
+                            </mat-card-content>                        
+                        </mat-card>
+                    </div>
+                </div>                
+            </div>
+        
+    <router-outlet name ="topheadlines"></router-outlet>
+
+
+     <div>
+            <h1 class="title">{{'cNewsBody'|translate}} </h1>
+                    <!-- /*other headline*/ -->
+
+    </div>
+    <div class="content">
+        <div fxLayout="row wrap">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid" >
+                <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let news of readmorenews" >
+                    <mat-card class="mat-elevation-z4" >
+                        <img mat-card-image [src]="news.image" width="400px" height="200px" >
+
+                        <mat-card-header>
+                            <mat-card-title > {{news.title}} </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>{{news.description}}</p>
+                        </mat-card-content>
+                        <button mat-button routerLink="/news-details" class ="color-button" (click)="showDetails(news)" ><mat-icon aria-hidden="false">add</mat-icon>Load More</button>
+                    
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<button mat-button  class ="color-button"><mat-icon aria-hidden="false">add</mat-icon>Load More</button>
+
+</div>
+
+
+ 

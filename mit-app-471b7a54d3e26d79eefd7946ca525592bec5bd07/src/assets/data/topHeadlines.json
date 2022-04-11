@@ -1,0 +1,21 @@
+[
+    {
+      "id": "1",
+      "title": " Kickstart for the start-up ",
+      "description": "Mohammad Abu Rezeq is the first prospective founder at the Deggendorf Institute of Technology (DIT) to receive funding for his start-up idea as an int...",
+     "image": "../assets/image1.webp"
+    },
+    {
+      "id": "2",
+      "title": "ECRI Lunch Talk – Destination Branding",
+      "description": "The European Campus Rottal-Inn (ECRI) of the Deggendorf Institute of Technology (DIT) rings in the new year with a new event format. The series called...",
+      "image": "../assets/image2.webp"
+    },
+    {
+      "id": "3",
+        "title": "DIT, Start-ups and Silicon Valley",
+        "description": "At the beginning of December, a delegation from the Deggendorf Institute of Technology (DIT) led by President Prof. Dr. Peter Sperber and Prof. Peter ...",
+        "image": "../assets/Silicon_Valley.webp"
+    }
+   
+  ]

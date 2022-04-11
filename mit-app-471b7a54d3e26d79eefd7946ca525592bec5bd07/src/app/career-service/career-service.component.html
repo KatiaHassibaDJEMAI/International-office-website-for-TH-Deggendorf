@@ -1,0 +1,91 @@
+<main>
+    <div class="header-img">
+        <img class="center" src="assets/international.webp" alt="thd-int" height="300px" width="100%">
+    </div>
+</main>
+<br>
+<div id="career" style="text-align:left">
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        Jobs, Coaching & Support Services & Co.
+    </h1>
+<div>
+<br>
+<div>
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        Job Forum
+    </h1> 
+    <br>
+    <div>
+        <p>Every year, the Career Service organizes job forums together with  faculties to give you the opportunity to get to know companies from your respective field of study.</p>
+        <p>At these forums you can personally chat to company reps in small groups to enquire about starting a career, salary or further development opportunities. These meetings are very informal and will give you exclusive impressions about potential employers. Initially, interesting short lectures are given to inform you about the companies in advance. Take the chance to build a personal network for your professional future.</p>
+    </div>
+    <br>
+    <br>
+    <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+        Writing an application, CV check
+    </h1> 
+    <br>
+    <div>
+        <p>In order to be perfectly prepared for a individual documents check with Career Service, please first see the recording of our Application Workshop on iLearn and revise your documents with those tips.</p>
+        <p>The iLearn Course also provides you with further useful tips on the application process in Germany.</p>
+        <p>Don't miss the chance to get to know application information first hand and learn about german standards for your application documents to be well prepared for your job entry in Germany.</p>
+    </div>
+</div>
+<br>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Career Seminars
+    </h2>
+    <div *ngFor="let item of coursesList_int">
+        <div *ngIf="item.course === 'Career Seminars'">
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{item.name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          {{item.description}}
+      
+      
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>  
+<br>
+<br>
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Mentoring Programme
+    </h2>
+    <div *ngFor="let item of coursesList_int">
+        <div *ngIf="item.course === 'Mentoring Programme'">
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{item.name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          {{item.description}}
+      
+      
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>  
+<br>
+<br>
+
+<div>
+    <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+        Contact
+    </h2>
+    <div class="contact">
+        <p>Julia K</p>
+        <p>Deputy Head of Division</p>
+        <p>B 210</p>
+        <p>juliak@th-deg.de</p>
+    </div>
+</div>

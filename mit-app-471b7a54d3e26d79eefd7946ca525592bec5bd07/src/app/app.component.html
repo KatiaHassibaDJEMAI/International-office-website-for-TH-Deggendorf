@@ -1,0 +1,78 @@
+
+  <mat-toolbar class ="white">
+    
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="false" fxShow.lt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div fxShow="true" fxHide.lt-sm>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a href="#" mat-button [routerLink]="['events']">{{'cEvents'|translate}}</a>
+        <a href="#" mat-button routerLink="/news">{{'cNews'|translate}}</a>
+        <a href="#" mat-button routerLink="/navigation">{{'cNavigation'|translate}}</a>
+        <!-- <a href="#" mat-button routerLink="/rooms">{{'cRooms'|translate}}</a> -->
+        <a href="#" mat-button routerLink="/internal">{{'cInternal'|translate}}</a>
+        <a href="#" mat-button routerLink="/international">{{'cInternational'|translate}}</a>
+      </div>
+      <span class="spacer"></span>
+    
+    </mat-toolbar-row>
+     
+  </mat-toolbar>
+  <mat-toolbar-row class ="color-toolbar">
+    <div><a href=""><img class="center" src="/assets/THD-Logo.png" height="40"  alt="load failed"></a></div>
+    <span class="spacer"></span>
+    <app-select-language></app-select-language>
+    <a href="#" mat-button routerLink="/login"><mat-icon aria-hidden="false">account_circle</mat-icon>{{'cLogin'|translate}}</a>
+  </mat-toolbar-row>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav fullscreen>
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" href="#" mat-list-item> <mat-icon>close</mat-icon></a>
+        <a href="#" mat-button [routerLink]="['events']">{{'cEvents'|translate}}</a>
+        <a href="#" mat-button routerLink="/news">{{'cNews'|translate}}</a>
+        <a href="#" mat-list-item routerLink="/navigation">{{'cNavigation'|translate}}</a>
+        <!-- <a href="#" mat-list-item routerLink="/rooms">{{'cRooms'|translate}}</a> -->
+        <a href="#" mat-button routerLink="/internal">{{'cInternal'|translate}}</a>
+        <a href="#" mat-list-item routerLink="/international">{{'cInternational'|translate}}</a>
+        <a href="#" mat-list-item routerLink="/login">{{'cLogin'|translate}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="sn-content"><router-outlet></router-outlet></mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container">
+            <div class="text-center center-block">
+                  <a href="https://www.facebook.com/HochschuleDeggendorf"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                  <a href="https://twitter.com/th_deggendorf"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                  <a href="https://www.instagram.com/th_deggendorf"><i id="social-gp" class="fa fa-instagram fa-3x social"></i></a>
+                  <a href="https://de.linkedin.com/school/technische-hochschule-deggendorf/"><i id="social-em" class="fa fa-linkedin-square fa-3x social"></i></a>
+        </div>
+    </div>
+    </section>
+
+  <!-- <footer class="social-footer">
+    <div class="social-footer-left">
+      <a href="#"><img class="logo" src="https://placehold.it/150x30"></a>
+    </div>
+    <div class="social-footer-icons">
+      <ul class="menu simple">
+        <li><a href="https://www.facebook.com/HochschuleDeggendorf"><i class="fa fa-facebook" src="/assets/facebook.webp" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/th_deggendorf"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://de.linkedin.com/school/technische-hochschule-deggendorf/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/th_deggendorf"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer> -->
+
+
+
+
+
+
+
+  

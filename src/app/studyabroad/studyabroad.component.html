@@ -1,0 +1,56 @@
+<main>
+  <div class="header-img">
+      <img class="center" src="assets/international.webp" alt="thd-int" height="300px" width="100%">
+  </div>
+</main>
+<br>
+<div id="internationalstudents" style="text-align:left">
+  <h1 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+    Study & Work Abroad
+  </h1>
+  <h2 style="color: #1a0566;font-family: Arial, sans-serif;font-size:30px ;text-align:left">
+    Widen your horizons & gain international experience
+  </h2>
+<div>
+<br>
+<div>
+  <h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+      Course Choices for International students
+  </h2>
+
+<div *ngFor="let item of coursesList">
+  <div *ngIf="item.course === 'A Study Semester Abroad'">
+<mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{item.name}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    {{item.description}}
+  </mat-expansion-panel>
+</mat-accordion>
+</div>
+</div>
+<br>
+<br>
+<h2 style="font-family: Arial, sans-serif;font-size:30px ;text-align:center">
+  An Internship abroad
+</h2>
+<div *ngFor="let item of coursesList">
+  <div *ngIf="item.course === 'An Internship Abroad'">
+<mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{item.name}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    {{item.description}}
+  </mat-expansion-panel>
+</mat-accordion>
+</div>
+</div>
+</div>
+<br>
+<br>

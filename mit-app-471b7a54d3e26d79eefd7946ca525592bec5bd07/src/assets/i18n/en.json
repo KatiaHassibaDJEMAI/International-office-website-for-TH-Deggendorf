@@ -1,0 +1,23 @@
+{
+    "languageView": "Language",
+    "currentLanguage": "English",
+    "cStartText": "Welcome to DIT!",
+    "cRooms": "Rooms",
+    "cRoomsText": "Current Booking of Room with ",
+    "cRoomSelect": "Select a room",
+    "cNavigation": "Navigation",
+    "cNavigationText": "Navigation works",
+    "cInternal": "Internal",
+    "cInternalText": "Internal Information works",
+    "cInternational": "International",
+    "cInternationalText": "Study & Research at DIT",
+    "cLogin": "Login",
+    "cLoginText": "Please login with your e-mail and password:",
+    "cEvents": "Events",
+    "cEventsText": "Events page!!",
+    "cNews": "News",
+    "cNewsText": "Current news!!",
+    "cNewsCard": "Kickstart for the start-up",
+    "cNewsTop": "Top Headlines",
+    "cNewsBody": "Read More News"
+}
