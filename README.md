@@ -3,6 +3,7 @@ International office website for TH Deggendorf
 
 Description:
 1. Frontend:
+
 The ng serve in command line will open the home page of the International office website.
 Following pages are created in the IO app:
 
@@ -46,6 +47,8 @@ The data for users and rooms are taken from the backend server - mongodb. Other 
 
 2. Backend
 The backend project is updated in a different repository to avoid errors and for a better understanding and performance.
+https://github.com/KatiaHassibaDJEMAI/International-office-website-for-TH-Deggendorf_Backend.git
+
 The backend server is set uo using Node.js + Express + MongoDB.
 The api server which we created is: http://localhost:3000/
 
